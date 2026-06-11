@@ -1,0 +1,50 @@
+body,.card{
+    background-color: rgb(21, 21, 33);
+}
+
+#navbarNav{
+    flex-grow: 0;
+}
+
+.nav-link, .navbar-brand{
+    color: rgb(125,203,241);
+}
+
+.navbar-toggler{
+    background-color: rgb(125,203,241);
+}
+
+#about-div,#about-content,#skills-header,#project-title, #projects-text, #contact-title, #contact-text, #footer-title{
+    color: rgb(125,203,241);
+}
+
+.textIcon{
+    color:rgb(125,203,241);
+}
+
+#about-title,#skills-title,#project-title, #contact-title{
+    font-size: 45px;
+}
+
+#about-div{
+    font-size: 24px;
+}
+
+
+#line{
+    border-bottom: 2px solid rgb(125,203,241);
+    
+}
+
+.card{
+    border: none;
+}
+
+.form-label{
+    color: rgb(125,203,241);
+}
+
+.buttonForm{
+    background-color: rgb(125,203,241);
+    width: 100%;
+}
