@@ -1,0 +1,10 @@
+# Block direct access to config and the PHPMailer library
+<Files "config.php">
+    Require all denied
+</Files>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^phpmailer/ - [F,L]
+</IfModule>
+
+Options -Indexes

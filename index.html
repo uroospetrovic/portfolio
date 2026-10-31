@@ -3,236 +3,648 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet"/>
+    <title>Uroš Petrović | Full-Stack Web Developer</title>
+    <meta name="description" content="Uroš Petrović – full-stack web developer from Belgrade. Fast, modern websites, web shops and web applications built with PHP, Laravel, ASP.NET, WordPress and Docker.">
+    <meta property="og:title" content="Uroš Petrović | Full-Stack Web Developer">
+    <meta property="og:description" content="Modern websites, web shops and web applications that bring real results.">
+    <meta property="og:image" content="assets/img/portfolio-image.png">
+    <meta name="theme-color" content="#081028">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <!--Navigation start-->
-    <div class="container" id="navigation-container">
-        <nav class="navbar navbar-expand-lg">
-   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><h1 class="fw-bolder">&ltUP/&gt</h1></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about-div">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills-container">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects-container">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-container">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    </div>
-    <!--Navigation end-->
+    <!-- Scroll progress -->
+    <div class="scroll-progress" aria-hidden="true"></div>
 
+    <!-- Cursor glow (desktop only) -->
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-    <!--Profile section-->
-    <div class="container text-center">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-12 col-md-6" id="about-div">
-                <h1 id="about-title">&ltUros <br/>Petrovic/&gt</h1>
-                <p>Full Stack Developer</p>
-                <p>My name is Uroš Petrović, and I am a 24-year-old Full Stack Developer. I graduated from the Higher ICT School, specializing in Web Programming.
+    <!-- Header / Navbar -->
+    <header id="site-header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <div class="logo-badge">UP</div>
+                <div class="logo-text">Uroš Petrović</div>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="assets/cv/Uros_Petrovic_CV.pdf" class="btn-header-cv" download>Download CV</a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
 
-I am passionate about building modern, efficient, and user-friendly web applications. My focus is on both frontend and backend development, allowing me to create complete and functional solutions from start to finish.
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="grid-lines"></div>
+        </div>
 
-Throughout my studies and personal projects, I have gained experience working with various web technologies and frameworks, and I am constantly improving my skills to stay up to date with industry standards.
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="section-tag hero-anim" style="--d:0">
+                    <span class="status-dot"></span> Available for new projects
+                </span>
+                <h1 class="hero-headline hero-anim" style="--d:1">
+                    Hi, I'm <span class="gradient-text">Uroš Petrović</span><br>
+                    <span class="typed-wrap"><span class="typed-text" data-words='["Full-Stack Developer","WordPress & WooCommerce Expert","PHP & Laravel Developer","ASP.NET Developer"]'>Full-Stack Developer</span><span class="typed-caret">|</span></span>
+                </h1>
+                <p class="hero-desc hero-anim" style="--d:2">
+                    I design and build fast, modern websites, web shops and web applications that don't just look good &mdash; they bring in clients, bookings and sales. From the first sketch to deployment, you get clean code and a partner who cares about results.
+                </p>
 
-I am motivated, detail-oriented, and always eager to take on new challenges and contribute to real-world projects.</p>
+                <div class="hero-actions hero-anim" style="--d:3">
+                    <a href="#projects" class="btn-blue btn-shine">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-dark-outline">Let's Talk</a>
+                </div>
 
-                  <a href="https://github.com/uroospetrovic"><img src="assets/img/github.png" /></a>
-                  <a href="https://www.linkedin.com/in/uro%C5%A1-petrovi%C4%87-751552226/"><img src="assets/img/linkedin.png" /></a>
-                  <a href="https://www.instagram.com/uki__01"><img src="assets/img/instagram.png" /></a>
+                <div class="social-bar hero-anim" style="--d:4">
+                    <a href="https://github.com/uroospetrovic" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/uro%C5%A1-petrovi%C4%87-751552226/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/uki__01" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:petrovicuros052@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="col-12 col-md-6" id="image-profile">
-              <img src="assets/img/portfolio-image.jpeg" class="img-fluid" alt="Responsive image">
+
+            <div class="hero-image-wrapper hero-anim" style="--d:2">
+                <div class="neon-arch-glow"></div>
+                <img src="assets/img/portfolio-image.png" alt="Uroš Petrović at work" class="hero-avatar">
+
+                <div class="tech-float tf-1" title="PHP"><img src="assets/icons/phpicon.svg" alt="PHP"></div>
+                <div class="tech-float tf-2" title="Docker"><i class="fa-brands fa-docker"></i></div>
+                <div class="tech-float tf-3" title="ASP.NET"><span class="dotnet-mini">.NET</span></div>
+                <div class="tech-float tf-4" title="WordPress"><img src="assets/icons/wordpressicon.svg" alt="WordPress"></div>
+
+                <div class="floating-badge">
+                    <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="badge-text">Turning Ideas<br>Into Digital Reality</div>
+                </div>
             </div>
         </div>
+
+        <a href="#projects" class="scroll-indicator" aria-label="Scroll down">
+            <span class="mouse"><span class="wheel"></span></span>
+        </a>
+    </section>
+
+    <!-- TECH MARQUEE -->
+    <div class="tech-marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>ASP.NET</span><span>C#</span><span>MySQL</span><span>WordPress</span><span>WooCommerce</span><span>Docker</span><span>Tailwind</span><span>Bootstrap</span><span>Sass</span><span>Linux</span><span>SEO</span>
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>ASP.NET</span><span>C#</span><span>MySQL</span><span>WordPress</span><span>WooCommerce</span><span>Docker</span><span>Tailwind</span><span>Bootstrap</span><span>Sass</span><span>Linux</span><span>SEO</span>
+        </div>
     </div>
 
-    <!--End profile section-->
-    <div class="container mt-5" id="line">
+    <!-- FEATURED PROJECTS -->
+    <section class="featured-projects" id="projects">
+        <div class="container">
+            <div class="section-header-flex" data-reveal>
+                <div>
+                    <span class="section-tag">MY SELECTED WORK</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-sub">Real projects for real clients &mdash; live, in production and bringing results every day.</p>
+                </div>
+                <a href="#all-projects" class="view-all-link">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
 
-    </div>
-    <!--Skills section-->
+            <div class="featured-list">
+                <!-- Project 1 -->
+                <article class="featured-item" data-reveal>
+                    <a class="device-laptop tilt" href="https://aerodromparkingspot.com/" target="_blank" rel="noopener" aria-label="Open Aerodrom Parking Spot">
+                        <div class="laptop-screen">
+                            <span class="laptop-cam"></span>
+                            <div class="screen-inner">
+                                <img src="assets/img/AerodromParkingSpot.png" alt="Aerodrom Parking Spot website" loading="lazy">
+                                <span class="screen-glare"></span>
+                            </div>
+                        </div>
+                        <div class="laptop-base"><span class="laptop-notch"></span></div>
+                    </a>
+                    <div class="featured-content">
+                        <span class="project-index">01</span>
+                        <span class="project-kind">WordPress &middot; SEO &middot; Google Ads</span>
+                        <h3 class="project-title">Aerodrom Parking Spot</h3>
+                        <p class="project-description">A complete online presence for a parking service near Belgrade Nikola Tesla Airport. I built the WordPress site with a simple online booking form, optimized it for local search and set up and manage Google Ads campaigns &mdash; the result was <strong>400+ bookings in under three months</strong>.</p>
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> Online reservation system</li>
+                            <li><i class="fa-solid fa-check"></i> On-page &amp; local SEO</li>
+                            <li><i class="fa-solid fa-check"></i> Ongoing Google Ads management</li>
+                        </ul>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">WordPress</span><span class="tech-tag">SEO</span><span class="tech-tag">Google Ads</span>
+                        </div>
+                        <a href="https://aerodromparkingspot.com/" target="_blank" rel="noopener" class="btn-blue btn-sm btn-shine">Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
 
-    <div class="container text-center mt-5" id="skills-container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-12 col-md-6" id="skills-header">
-          <h2 class="mb-5" id="skills-title">&ltskills/&gt</h2>
+                <!-- Project 2 -->
+                <article class="featured-item reverse" data-reveal>
+                    <a class="device-laptop tilt" href="https://smartbrava.com/" target="_blank" rel="noopener" aria-label="Open SmartBrava">
+                        <div class="laptop-screen">
+                            <span class="laptop-cam"></span>
+                            <div class="screen-inner">
+                                <img src="assets/img/SmartBrava.png" alt="SmartBrava web shop" loading="lazy">
+                                <span class="screen-glare"></span>
+                            </div>
+                        </div>
+                        <div class="laptop-base"><span class="laptop-notch"></span></div>
+                    </a>
+                    <div class="featured-content">
+                        <span class="project-index">02</span>
+                        <span class="project-kind">E-Commerce &middot; WooCommerce</span>
+                        <h3 class="project-title">SmartBrava Web Shop</h3>
+                        <p class="project-description">A WooCommerce web shop for smart locks, access control and security hardware. Clear product categories, a smooth checkout and a custom-styled design made the store easy to manage &mdash; and since launch, both online sales and phone inquiries have grown significantly.</p>
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> Full product catalog &amp; checkout</li>
+                            <li><i class="fa-solid fa-check"></i> Custom theme styling</li>
+                            <li><i class="fa-solid fa-check"></i> Ad campaigns &amp; maintenance</li>
+                        </ul>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">WordPress</span><span class="tech-tag">WooCommerce</span><span class="tech-tag">CSS</span>
+                        </div>
+                        <a href="https://smartbrava.com/" target="_blank" rel="noopener" class="btn-blue btn-sm btn-shine">Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="featured-item" data-reveal>
+                    <a class="device-laptop tilt" href="https://vakuumlift.rs" target="_blank" rel="noopener" aria-label="Open VakuumLift website">
+                        <div class="laptop-screen">
+                            <span class="laptop-cam"></span>
+                            <div class="screen-inner">
+                                <img src="assets/img/VakuumLift.png" alt="VakuumLift website – vacuum glass lifter rental and sales" loading="lazy">
+                                <span class="screen-glare"></span>
+                            </div>
+                        </div>
+                        <div class="laptop-base"><span class="laptop-notch"></span></div>
+                    </a>
+                    <div class="featured-content">
+                        <span class="project-index">03</span>
+                        <span class="project-kind">Custom Website &middot; PHP &middot; SEO</span>
+                        <h3 class="project-title">VakuumLift</h3>
+                        <p class="project-description">A business website for a company that rents and sells vacuum glass lifters &mdash; equipment that lets a single operator safely place large glass panes and panels with a crane. I built it from scratch, without a CMS, in HTML, CSS, PHP and JavaScript, so it loads fast and every page is tailored to what contractors search for. Clear product pages, a price list and visible <strong>"Request a quote"</strong> buttons turn visitors into rental and sales inquiries.</p>
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-check"></i> Rental (daily, weekly, monthly) &amp; sales pages</li>
+                            <li><i class="fa-solid fa-check"></i> Quote request &amp; contact form</li>
+                            <li><i class="fa-solid fa-check"></i> SEO for local searches (e.g. &ldquo;iznajmljivanje vakuumskog podiza&#269;a&rdquo;)</li>
+                        </ul>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">PHP</span><span class="tech-tag">JavaScript</span><span class="tech-tag">SEO</span>
+                        </div>
+                        <a href="https://vakuumlift.rs" target="_blank" rel="noopener" class="btn-blue btn-sm btn-shine">Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+            </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="row" id="skills-icons">
-          </div>
-          </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header-flex" data-reveal>
+                <div>
+                    <span class="section-tag">TECHNICAL SKILLS</span>
+                    <h2 class="section-title">My Tech Stack</h2>
+                    <p class="section-sub">The tools I use every day to turn ideas into fast, secure and maintainable products.</p>
+                </div>
+                <div class="skill-filters">
+                    <button class="skill-filter active" data-cat="all">All</button>
+                    <button class="skill-filter" data-cat="frontend">Frontend</button>
+                    <button class="skill-filter" data-cat="backend">Backend</button>
+                    <button class="skill-filter" data-cat="tools">CMS &amp; Tools</button>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- rendered by main.js -->
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- End Skills section-->
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div data-reveal>
+                <span class="section-tag">GET TO KNOW ME</span>
+                <h2 class="section-title" style="margin-bottom: 24px;">About Me</h2>
+            </div>
 
-    <div class="container mt-5" id="line">
+            <div class="about-card-bg" data-reveal>
+                <div>
+                    <p class="about-lead">I'm a full-stack web developer from Belgrade who loves turning ideas into products people actually enjoy using.</p>
+                    <p class="about-text">
+                        I graduated in Web Programming from the Higher ICT School (ICT College) in Belgrade. Since then I've been building everything from business websites and WooCommerce stores to custom web applications in PHP, Laravel and ASP.NET &mdash; and packaging them with Docker for reliable deployment. I care about clean code, fast load times and design that guides the visitor toward action. For me, a project isn't finished when it goes live &mdash; it's finished when it brings results.
+                    </p>
 
-    </div>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <div class="about-info-label">Location</div>
+                                <div class="about-info-val">Belgrade, Serbia</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <div class="about-info-label">Education</div>
+                                <div class="about-info-val">Higher ICT School</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <div class="about-info-label">Email</div>
+                                <div class="about-info-val">petrovicuros052@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <a href="assets/cv/Uros_Petrovic_CV.pdf" class="btn-blue btn-shine" download>Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
 
-    <!--Project section-->
-
-    <div class="container text-center mt-5" id="projects-container">
-      <div class="col-12 col-md-6">
-        <h2 id="project-title">&ltprojects/&gt</h2>
-      </div>
-
-      <div class="row justify-content-between align-items-center mt-5">
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://uroospetrovic.github.io/"><img src="assets/img/PvcSistemDjukic.png" class="card-img-top project-img" alt="PvcSistemDjukic"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">This was my first web development project, built using HTML and CSS. The goal of this project was to learn the fundamentals of web design, including page structure, layout building, and styling without the use of frameworks or responsive techniques.</p>
+                <div class="about-img-box">
+                    <img src="assets/img/about.jpg" alt="Developer workspace" loading="lazy">
+                    <div class="code-window">
+                        <div class="code-window-bar"><span></span><span></span><span></span><em>uros.js</em></div>
+<pre><code><span class="c-k">const</span> <span class="c-v">uros</span> = {
+  <span class="c-p">role</span>: <span class="c-s">'Full-Stack Dev'</span>,
+  <span class="c-p">based</span>: <span class="c-s">'Belgrade'</span>,
+  <span class="c-p">loves</span>: [<span class="c-s">'clean code'</span>, <span class="c-s">'results'</span>],
+  <span class="c-p">openToWork</span>: <span class="c-k">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div data-reveal>
+                <span class="section-tag">WHAT I DO</span>
+                <h2 class="section-title">Services</h2>
+                <p class="section-sub" style="margin-bottom: 32px;">Everything you need to launch, grow and maintain your online business &mdash; in one place.</p>
+            </div>
+
+            <div class="services-4grid">
+                <div class="service-card" data-reveal>
+                    <div class="service-icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-desc">Fast, responsive websites and custom web applications built with PHP, Laravel, ASP.NET and modern JavaScript &mdash; tailored to your business, not a template.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <div class="service-icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-desc">Clean, intuitive interfaces that look great on every screen and guide visitors toward contacting you, booking or buying.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <div class="service-icon-box"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3 class="service-title">E-Commerce Stores</h3>
+                    <p class="service-desc">Complete WooCommerce shops: product setup, payment and shipping options, security and an easy admin panel so you can manage everything yourself.</p>
+                </div>
+                <div class="service-card" data-reveal>
+                    <div class="service-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="service-title">SEO, Ads &amp; Maintenance</h3>
+                    <p class="service-desc">Local SEO, Google Ads campaigns and regular updates, backups and monitoring &mdash; so your site stays secure, fast and easy to find.</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header-flex" data-reveal>
+                <div>
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2 class="section-title">What My Clients Say</h2>
+                </div>
+            </div>
+
+            <div class="testimonial-carousel" data-reveal>
+                <div class="tc-viewport">
+                    <div class="tc-track">
+                        <!-- To add a review: copy one .tc-slide block and change the text, name, role and image -->
+                        <figure class="tc-slide">
+                            <i class="fa-solid fa-quote-left quote-mark"></i>
+                            <div class="star-rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="testimonial-text">"The website and ads brought us over 400 bookings in less than three months. The booking process is simple, and the collaboration was fast and clear."</blockquote>
+                            <figcaption class="client-profile">
+                                <img src="assets/img/AerodromParkingSpot.png" alt="Aerodrom Parking Spot" class="client-avatar">
+                                <div>
+                                    <div class="client-name">Aerodrom Parking Spot</div>
+                                    <div class="client-role">CEO</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="tc-slide">
+                            <i class="fa-solid fa-quote-left quote-mark"></i>
+                            <div class="star-rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="testimonial-text">"Ever since we launched the new website and ad campaigns, our sales and call volume have grown significantly, and the store runs smoothly."</blockquote>
+                            <figcaption class="client-profile">
+                                <img src="assets/img/SmartBrava.png" alt="SmartBrava" class="client-avatar">
+                                <div>
+                                    <div class="client-name">Smart Brava</div>
+                                    <div class="client-role">Founder</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <!-- VakuumLift: draft review – send it to the client for approval before publishing -->
+                        <figure class="tc-slide">
+                            <i class="fa-solid fa-quote-left quote-mark"></i>
+                            <div class="star-rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote class="testimonial-text">"Since the new website went live, people find us on Google on their own &mdash; we get rental and sales inquiries for our vacuum lifters every week. Clients see the equipment, the prices and the load capacity in one place and call us ready to book. Uroš understood our business right away and delivered quickly."</blockquote>
+                            <figcaption class="client-profile">
+                                <img src="assets/img/VakuumLift.png" alt="VakuumLift" class="client-avatar">
+                                <div>
+                                    <div class="client-name">VakuumLift</div>
+                                    <div class="client-role">Owner</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="tc-controls">
+                    <button class="tc-arrow tc-prev" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="tc-dots" role="tablist"></div>
+                    <button class="tc-arrow tc-next" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- PROJECTS GALLERY -->
+    <section class="all-projects-section" id="all-projects">
+        <div class="container">
+            <div data-reveal style="text-align: center;">
+                <span class="section-tag">MY WORK</span>
+                <h2 class="section-title" style="margin-bottom: 10px;">Projects Gallery</h2>
+                <p class="section-sub center" style="margin-bottom: 28px;">From business websites to full-stack applications &mdash; filter by type.</p>
+            </div>
 
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://uros1010.github.io/sajt/index.html"><img src="assets/img/DoorControl.png" class="card-img-top project-img" alt="DoorControl"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">A responsive web project developed using HTML, CSS, and Bootstrap. The main focus was on creating a clean and modern interface with fully responsive design and reusable Bootstrap components.</p>
+            <div class="filter-tabs" data-reveal>
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="websites">Websites</button>
+                <button class="tab-btn" data-filter="wordpress">WordPress</button>
+                <button class="tab-btn" data-filter="fullstack">Full-Stack</button>
+            </div>
+
+            <div class="projects-3grid all-projects-grid">
+                <!-- 0. VakuumLift -->
+                <div class="project-card websites" data-reveal>
+                    <a class="browser-frame tilt" href="https://vakuumlift.rs" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-solid fa-lock"></i> vakuumlift.rs</span></div>
+                        <div class="browser-view"><img src="assets/img/VakuumLift.png" alt="VakuumLift" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">VakuumLift</h3>
+                            <p class="project-description">Custom PHP website for renting and selling vacuum glass lifters, optimized for local search.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">PHP</span><span class="tech-tag">JavaScript</span><span class="tech-tag">SEO</span></div>
+                        </div>
+                        <a href="https://vakuumlift.rs" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 1 -->
+                <div class="project-card wordpress" data-reveal>
+                    <a class="browser-frame tilt" href="https://aerodromparkingspot.com/" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-solid fa-lock"></i> aerodromparkingspot.com</span></div>
+                        <div class="browser-view"><img src="assets/img/AerodromParkingSpot.png" alt="Aerodrom Parking Spot" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">Aerodrom Parking Spot</h3>
+                            <p class="project-description">Airport parking website with online booking, local SEO and Google Ads campaigns.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">WordPress</span><span class="tech-tag">SEO</span><span class="tech-tag">Google Ads</span></div>
+                        </div>
+                        <a href="https://aerodromparkingspot.com/" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="project-card wordpress" data-reveal>
+                    <a class="browser-frame tilt" href="https://smartbrava.com/" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-solid fa-lock"></i> smartbrava.com</span></div>
+                        <div class="browser-view"><img src="assets/img/SmartBrava.png" alt="SmartBrava" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">SmartBrava Store</h3>
+                            <p class="project-description">WooCommerce web shop for smart locks and access control devices.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">WordPress</span><span class="tech-tag">WooCommerce</span></div>
+                        </div>
+                        <a href="https://smartbrava.com/" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="project-card fullstack" data-reveal>
+                    <a class="browser-frame tilt" href="https://github.com/uroospetrovic/watchesgit" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-brands fa-github"></i> github.com/uroospetrovic/watchesgit</span></div>
+                        <div class="browser-view"><img src="assets/img/Watches.png" alt="Watches app" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">Watches App</h3>
+                            <p class="project-description">Custom PHP web store with MySQL, admin panel, filters and user authentication.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">JS</span></div>
+                        </div>
+                        <a href="https://github.com/uroospetrovic/watchesgit" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="project-card websites" data-reveal>
+                    <a class="browser-frame tilt" href="https://petrovicuros123.github.io/SunVista/" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-solid fa-lock"></i> petrovicuros123.github.io/SunVista</span></div>
+                        <div class="browser-view"><img src="assets/img/SunVista.png" alt="SunVista" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">SunVista E-Commerce</h3>
+                            <p class="project-description">Sunglasses shop frontend with a JavaScript cart that remembers items using LocalStorage.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">jQuery</span></div>
+                        </div>
+                        <a href="https://petrovicuros123.github.io/SunVista/" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="project-card websites" data-reveal>
+                    <a class="browser-frame tilt" href="https://urosp10.github.io/construction.github.io/index.html" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-solid fa-lock"></i> urosp10.github.io/construction</span></div>
+                        <div class="browser-view"><img src="assets/img/UPConstruction.png" alt="UP Construction" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">UP Construction</h3>
+                            <p class="project-description">Interactive, fully responsive construction company website built with JavaScript and Bootstrap.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">Bootstrap</span><span class="tech-tag">JavaScript</span></div>
+                        </div>
+                        <a href="https://urosp10.github.io/construction.github.io/index.html" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="project-card websites" data-reveal>
+                    <a class="browser-frame tilt" href="https://uros1010.github.io/sajt/index.html" target="_blank" rel="noopener">
+                        <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url"><i class="fa-solid fa-lock"></i> uros1010.github.io/sajt</span></div>
+                        <div class="browser-view"><img src="assets/img/DoorControl.png" alt="Door Control" loading="lazy"></div>
+                    </a>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title">Door Control</h3>
+                            <p class="project-description">Responsive business website for an automatic door company, built on the Bootstrap grid.</p>
+                            <div class="project-tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Bootstrap</span></div>
+                        </div>
+                        <a href="https://uros1010.github.io/sajt/index.html" target="_blank" rel="noopener" class="project-btn-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="work-together-banner" data-reveal>
+                <div class="banner-glow" aria-hidden="true"></div>
+                <h2 class="banner-title">Have a Project in Mind?</h2>
+                <p class="banner-sub">Whether it's a new website, a web shop or a custom application &mdash; let's talk about how I can help your business grow.</p>
+                <a href="#contact" class="btn-blue btn-shine">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid" data-reveal>
+                <div>
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="contact-intro">
+                        Tell me a bit about your project, your goals and your timeline. I usually reply within 24 hours.
+                    </p>
+
+                    <div class="contact-info-list">
+                        <a class="contact-info-card" href="mailto:petrovicuros052@gmail.com">
+                            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-info-label">Email</div>
+                                <div class="contact-info-val">petrovicuros052@gmail.com</div>
+                            </div>
+                        </a>
+                        <a class="contact-info-card" href="tel:+381641200839">
+                            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <div class="contact-info-label">Phone</div>
+                                <div class="contact-info-val">+381 64 1200 839</div>
+                            </div>
+                        </a>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <div class="contact-info-label">Location</div>
+                                <div class="contact-info-val">Belgrade, Serbia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" action="contact.php" method="POST" novalidate>
+                    <h3 class="form-title">Send Me a Message</h3>
+
+                    <!-- Honeypot (hidden from people, bots fill it) -->
+                    <div class="hp-field" aria-hidden="true">
+                        <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                    </div>
+                    <input type="hidden" name="form_time" id="form_time" value="">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-name">Name</label>
+                            <input id="f-name" name="name" type="text" class="form-input" placeholder="Your name" maxlength="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-email">Email</label>
+                            <input id="f-email" name="email" type="email" class="form-input" placeholder="you@example.com" maxlength="150" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="f-subject">Subject</label>
+                        <input id="f-subject" name="subject" type="text" class="form-input" placeholder="e.g. New website for my business" maxlength="150">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="f-message">Message</label>
+                        <textarea id="f-message" name="message" class="form-input" placeholder="Tell me about your project..." maxlength="5000" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit btn-shine">
+                        <span class="btn-label">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+                        <span class="btn-spinner" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://urosp10.github.io/construction.github.io/index.html"><img src="assets/img/UPConstruction.png" class="card-img-top project-img" alt="UPConstruction"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">A fully responsive web application built with HTML, CSS, Bootstrap, and JavaScript. The project focuses on both design and interactivity, implementing dynamic features to improve usability and provide a better user experience.</p>
-        </div>
-        </div>
-        </div>
-
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://petrovicuros123.github.io/SunVista/"><img src="assets/img/SunVista.png" class="card-img-top project-img" alt="SunVista"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">A responsive e-commerce website for selling glasses, built using HTML, CSS, JavaScript, jQuery, and Bootstrap. The project includes product listing, shopping cart functionality, and data persistence using LocalStorage.</p>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://github.com/uroospetrovic/watchesgit "><img src="assets/img/Watches.png" class="card-img-top project-img" alt="Watches"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">A full-stack e-commerce web application for selling watches, developed using HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, and MySQL. The project includes a responsive user interface, dynamic product management, user authentication, and database integration.</p>
-        </div>
-        </div>
-        </div>
-
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://smartbrava.com/"><img src="assets/img/SmartBrava.png" class="card-img-top project-img" alt="SmartBrava"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">This project is a WordPress e-commerce website developed for selling smart locks. It includes product pages, categories, and a structured layout designed to provide a smooth and user-friendly shopping experience. The project demonstrates the use of WordPress for building and managing online stores.</p>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="col-12 col-md-6 mt-3 mb-3" id="cards">
-        <div class="card" style="width: 100%;">
-        <a href="https://aerodromparkingspot.com/"><img src="assets/img/AerodromParkingSpot (1).png" class="card-img-top project-img" alt="AerodromParkingSpot"></a>
-        <div class="card-body">
-        <p class="card-text" id="projects-text">Full-stack project for Aerodrom Parking Spot involving the custom creation of a WordPress website, end-to-end On-Page SEO setup for local pretrage, and ongoing Google Ads campaign management for max conversion performance.</p>
-        </div>
-        </div>
-        </div>
-
-        
-
-      </div>
-    </div>
-
-
-    <!-- End Projects section-->
-
-    <div class="container mt-5" id="line">
-
-    </div>
-
-
-
-    <!--Contact Section-->
-
-    <div class="container mt-5" id="contact-container">
-      <div class="row justify-content-between text-center align-items-center">
-      <div class="col-12 col-md-6" id="contact-text">
-        <h2 id="contact-title" class="mb-5">&ltcontact/&gt</h2>
-        <h3>Let's Work Together</h3>
-        <p>I'm always interested in new opportunities, freelance projects, and collaborations. If you have a project in mind or would like to discuss a potential opportunity, feel free to get in touch.
-          You can use the contact form or reach out to me directly via email. I'll do my best to respond as soon as possible.</p>
-          <p>Email: petrovicuros052@gmail.com</p>
-          <p>Location: Belgrade, Serbia</p>
-          <a href="https://github.com/uroospetrovic"><img src="assets/img/github.png" /></a>
-          <a href="https://www.linkedin.com/in/uro%C5%A1-petrovi%C4%87-751552226/"><img src="assets/img/linkedin.png" /></a>
-          <a href="https://www.instagram.com/uki__01"><img src="assets/img/instagram.png" /></a>
-
-      </div>
-
-
-
-      <div class="col-12 col-md-6">
-      <form id="contact-form">
-      <div class="mb-3">
-    <label for="exampleInputName" class="form-label">Name</label>
-    <input type="text" class="form-control" id="inputEmail" placeholder="Name">
-    </div>
-    <div class="mb-3">
-    <label for="exampleInputEmail" class="form-label">Email</label>
-    <input type="Email" class="form-control" id="exampleInputEmail" placeholder="Email">
-  </div>
-  <div class="mb-3">
-    <label for="message" class="form-label">Message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea" rows="6" placeholder="Message"></textarea>
-  </div>
-  <button type="submit" class="btn buttonForm">Submit</button>
-  </form>
-      </div>
-      </div>
-    </div>
-
-    <div class="container mt-5" id="line">
-
-    </div>
-
+    <!-- FOOTER -->
     <footer>
-      <div class="container mt-5">
-        <div class="col-12 text-center">
-          <h3 id="footer-title">&copyUros Petrovic</h3>
+        <div class="container">
+            <div class="footer-copy">&copy; <span id="year">2026</span> Uroš Petrović. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-bar">
+                <a href="https://github.com/uroospetrovic" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/uro%C5%A1-petrovi%C4%87-751552226/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/uki__01" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
-      </div>
     </footer>
 
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
